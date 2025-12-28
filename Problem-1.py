@@ -15,9 +15,13 @@ class calculator:
             if self.b!=0:
                 return self.a/self.b
             else:
-                return "Division by zero not possible"
+                return "Division by zero is not possible"
         else:
             return "Invalid operation"
         
-calc=calculator(10.5,3.5,"+")
+a=float(input("Enter first number: "))
+b=float(input("Enter second number: "))
+operation=input("Enter operation(+,-,*,/): ")
+
+calc=calculator(a,b,operation)
 print(calc.calculate())
